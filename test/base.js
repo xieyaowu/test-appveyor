@@ -188,6 +188,8 @@ describe('base', function () {
 
         var data = app._get_list();
 
+        console.log(data);
+
         assert.strictEqual('/', data.uri);
         assert.strictEqual('_get_list', data.text);
         assert.strictEqual(2, data.children.length);
