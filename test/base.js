@@ -9,6 +9,7 @@
 var Mdjs = require('../');
 var assert = require('assert');
 var url = require('url');
+var path = require('path');
 
 var getpath = require('./getpath');
 
