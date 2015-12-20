@@ -190,6 +190,11 @@ describe('base', function () {
 
         console.log(data);
 
+        console.log(path.resolve(__dirname));
+        console.log(path.resolve(__dirname, 'a.json'));
+        console.log(path.resolve('/1.md'));
+        console.log(path.resolve('/1/1.md'));
+
         assert.strictEqual('/', data.uri);
         assert.strictEqual('_get_list', data.text);
         assert.strictEqual(2, data.children.length);
